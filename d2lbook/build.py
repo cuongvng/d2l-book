@@ -363,7 +363,7 @@ def get_subpages(input_fn):
                         subpages.append(fn)
     return subpages
 
-def process_and_eval_notebook(input_fn, output_fn, run_cells, timeout=20*60,
+def process_and_eval_notebook(input_fn, output_fn, run_cells, timeout=None,
                               lang='python', tab=None, default_tab=None):
     with open(input_fn, 'r') as f:
         md = f.read()
